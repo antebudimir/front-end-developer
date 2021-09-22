@@ -1,0 +1,84 @@
+// @font-faces:
+// Icons
+@font-face {
+	font-family: 'Icomoon';
+	src: url('../fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	font-family: 'Icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+@font-face {
+	font-family: 'Poppins Regular';
+	src: url('../fonts/Poppins-Regular.woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'Poppins Regular', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+h2 {
+	display: inline-block;
+	margin-bottom: 2rem;
+	margin-top: -2rem;
+	font-size: 1.3rem;
+}
+
+h3 {
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+
+p {
+	// color: $text-secondary-color;
+	line-height: 1.7;
+}
+
+// li {
+// 	color: $text-primary-color;
+// 	font-size: 0.9rem;
+// }
+
+.icon-whatsapp:before {
+	content: '\ea93';
+}
+
+.icon-share2:before {
+	content: '\ea82';
+}
+
+.icon-phone:before {
+	content: '\e942';
+}
+
+.icon-linkedin:before {
+	content: '\eac9';
+}
+
+.icon-arrow-up2:before {
+	content: '\ea3a';
+}
+
+.icon-github:before {
+	content: '\eab0';
+}

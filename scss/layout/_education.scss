@@ -1,0 +1,18 @@
+// Education
+#education {
+	& .fa-institution {
+		@include icon-style;
+	}
+
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.course {
+	font-size: 1rem;
+
+	&:not(:last-of-type) {
+		margin-bottom: 0.5rem;
+	}
+}

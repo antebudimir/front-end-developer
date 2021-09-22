@@ -1,0 +1,15 @@
+#intro {
+	clip-path: $primary-path;
+	padding: 2rem 1rem 6rem;
+	background-color: $tertiary-color;
+	color: $secondary-color;
+}
+
+.cardinal-number {
+	border: $primary-border;
+	box-shadow: $primary-shadow;
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 0.5rem 0.9rem;
+	background-color: $primary-color;
+}

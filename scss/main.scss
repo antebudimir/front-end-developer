@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+// @import 'abstracts/animations';
+
+// 2. Base stuff
+@import 'base/base';
+@import 'base/typography';
+// @import 'base/scrollbars';
+
+// 3. Layout-related sections
+@import 'layout/header';
+@import 'layout/showcase';
+@import 'layout/intro';
+@import 'layout/profile';
+@import 'layout/skills';
+// @import 'layout/experience';
+// @import 'layout/education';
+// @import 'layout/contact';
+// @import 'layout/footer';
+// @import 'layout/resume';
+
+// 4. Components
+// @import 'components/buttons';
+@import 'components/menu';
+@import 'components/contact-icons';

@@ -1,0 +1,61 @@
+// Animations
+@keyframes name {
+	from {
+		opacity: 0;
+		margin-left: -100%;
+	}
+
+	to {
+		opacity: 1;
+		margin-left: 0%;
+	}
+}
+
+// engineer slide in
+@keyframes rightSlide {
+	from {
+		opacity: 0;
+		width: 200%;
+	}
+
+	to {
+		opacity: 1;
+		width: 100%;
+	}
+}
+
+// download and contact link
+@keyframes glow {
+	from {
+		text-shadow: 0 0 5px $tertiary-color, 0 0 3px $tertiary-color,
+			0 0 3px $tertiary-color, 0 0 1px $tertiary-color,
+			0 0 1px $tertiary-color 0 0 1px $tertiary-color, 0 0 1px $tertiary-color;
+	}
+
+	to {
+		text-shadow: 0 0 1px $tertiary-color, 0 0 1px $tertiary-color,
+			0 0 1px $tertiary-color, 0 0 1px $tertiary-color, 0 0 3px $tertiary-color,
+			0 0 1px $tertiary-color, 0 0 1px $tertiary-color;
+	}
+}
+
+// sections fade-in, used via main.js
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes leftSlide {
+	from {
+		opacity: 0;
+		transform: translateX(-19rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0rem);
+	}
+}

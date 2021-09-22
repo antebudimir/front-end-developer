@@ -1,0 +1,17 @@
+#contact-icons {
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-around, center);
+	padding: 1.85rem 1rem;
+
+	& i {
+		color: $primary-color;
+		font-size: 2rem;
+	}
+}
+
+// .icon-linkedin,
+// .icon-github,
+// .icon-phone,
+// .icon-whatsapp {
+// 	height: auto;
+// }

@@ -1,0 +1,13 @@
+// styles related to the scrollbars
+#resume {
+	scrollbar-width: thin;
+}
+
+#resume::-webkit-scrollbar {
+	width: 8px;
+}
+
+#resume::-webkit-scrollbar-thumb {
+	border-radius: $border-radius-primary;
+	background: $text-secondary-color;
+}

@@ -1,0 +1,52 @@
+// Experience
+#experience {
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.fa-briefcase {
+	@include icon-style;
+}
+
+.current-position .date {
+	border: $border-line-secondary;
+	color: $tertiary-color;
+}
+
+.date {
+	border: $border-line-tertiary;
+	border-radius: $border-radius-primary;
+	display: inline-flex;
+	margin-bottom: 0.6rem;
+	padding: 0 0.2rem;
+	color: $text-secondary-color;
+	font-size: 0.9rem;
+}
+
+.position {
+	margin-bottom: 0.5rem;
+	color: $text-primary-color;
+	font-size: 1.1rem;
+}
+
+.company {
+	margin-bottom: 1rem;
+
+	& a {
+		color: $text-secondary-color;
+		font-size: 0.9rem;
+		text-decoration: underline;
+	}
+
+	& a:hover,
+	& a:focus {
+		color: $tertiary-color;
+		text-decoration: underline;
+	}
+}
+
+.text {
+	border-bottom: $border-line-primary;
+	padding-bottom: 1rem;
+}

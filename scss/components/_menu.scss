@@ -1,0 +1,80 @@
+// Menu
+.hamburger {
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.icon-menu:before {
+	content: '\e9bd';
+}
+
+.icon-x:before {
+	content: '\e905';
+}
+
+.icon-menu,
+.icon-x {
+	transition: color 600ms ease;
+}
+
+.icon-menu {
+	color: $secondary-color;
+	font-size: 1.9rem;
+}
+
+.icon-x {
+	font-size: 1.9rem;
+}
+
+.menu {
+	display: none;
+	position: fixed;
+	top: 4.2rem;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 4.2rem);
+	background-color: $primary-color;
+	text-align: center;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+		position: initial;
+		top: initial;
+		width: initial;
+		height: initial;
+	}
+}
+
+.menu-item {
+	&:not(:last-child) {
+		// margin-bottom: 1rem;
+	}
+
+	@include respond-to-width(1024px) {
+		border: none;
+
+		&:not(:last-child) {
+			margin: 0 2rem 0 0;
+		}
+	}
+}
+
+.menu-link {
+	display: block;
+	width: 10rem;
+	padding: 0.9rem 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+
+	// &:hover,
+	// &:focus {
+	// 	color: $tertiary-color;
+	// }
+
+	@include respond-to-width(1024px) {
+		display: initial;
+		width: initial;
+		padding: initial;
+	}
+}

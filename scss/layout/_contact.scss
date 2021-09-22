@@ -1,0 +1,47 @@
+// Contact
+#contact {
+	& .wrapper {
+		border: 0;
+		padding-bottom: 0;
+	}
+
+	& .fa-pencil-square-o {
+		@include icon-style;
+	}
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+label,
+input,
+textarea {
+	border: 0;
+	display: block;
+	width: 100%;
+	margin-top: 2rem;
+	background: $primary-color;
+	color: $text-primary-color;
+	font-size: 1rem;
+
+	@include respond-to-width(1024px) {
+		margin-top: 4rem;
+		background: $secondary-color;
+	}
+}
+
+input,
+textarea {
+	border-bottom: $border-line-tertiary;
+}
+
+textarea {
+	resize: none;
+	overflow: hidden;
+}
+
+label:focus,
+input:focus,
+textarea:focus {
+	border-bottom: $border-line-secondary;
+}

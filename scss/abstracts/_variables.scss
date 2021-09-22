@@ -1,0 +1,27 @@
+// Colors
+$primary-color: rgb(228, 49, 49);
+$secondary-color: rgb(255, 255, 255);
+$tertiary-color: rgb(4, 14, 20);
+// $quaternary-color: rgba(120, 204, 109, 0.239);
+// $tertiary-color-brighter: rgb(120, 250, 109);
+// $text-primary-color: rgba(255, 255, 255, 0.851);
+// $text-secondary-color: rgba(255, 255, 255, 0.55);
+// $border-color: rgba(255, 255, 255, 0.048);
+
+// Paths
+$primary-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+// $secondary-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+$secondary-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+
+// Borders
+$primary-border: 1px solid $secondary-color;
+
+// Shadows
+$primary-shadow: 0 0 0 5px $primary-color;
+
+// $border-radius-primary: 0.2rem;
+// $border-line-primary: 0.1rem solid $border-color;
+
+// Fills
+// $fill-1: 90%;
+// $fill-2: 100%;
