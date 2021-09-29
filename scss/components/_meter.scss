@@ -1,0 +1,101 @@
+// Meter component
+#meter-bars {
+	margin-top: 2rem;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, wrap);
+
+		// & .info-box:nth-of-type(1),
+		// & .info-box:nth-of-type(2) {
+		// 	flex: 0 0 49.15%;
+		// }
+
+		// & .info-box:nth-of-type(1) {
+		// 	margin-right: 0.9rem;
+		// }
+
+		// & .info-box:nth-of-type(2) {
+		// 	margin-top: 1rem;
+		// }
+	}
+}
+
+.bar-wrapper {
+	&:not(:last-of-type) {
+		margin-bottom: 0.5rem;
+	}
+
+	@include respond-to-width(1024px) {
+		flex: 0 0 49.15%;
+
+		&:nth-child(odd) {
+			margin-right: 0.9rem;
+		}
+	}
+}
+
+.skill {
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-between, initial);
+	font-size: 1rem;
+}
+
+.percentage-number {
+	text-align: right;
+}
+
+.bar {
+	background: $secondary-color;
+}
+
+.fill {
+	padding: 0.4rem 0;
+}
+
+.primary-percentage {
+	animation: primary-percentage 3000ms forwards;
+}
+
+@keyframes primary-percentage {
+	0% {
+		width: 0%;
+		background: $primary-color;
+	}
+
+	100% {
+		width: 90%;
+		background: $primary-color;
+	}
+}
+
+.secondary-percentage {
+	animation: secondary-percentage 3000ms forwards;
+}
+
+@keyframes secondary-percentage {
+	0% {
+		width: 0%;
+		background: $primary-color;
+	}
+
+	100% {
+		width: 80%;
+		background: $primary-color;
+	}
+}
+
+.tertiary-percentage {
+	animation: tertiary-percentage 3000ms forwards;
+}
+
+@keyframes tertiary-percentage {
+	0% {
+		width: 0%;
+		background: $primary-color;
+	}
+
+	100% {
+		width: 50%;
+		background: $primary-color;
+	}
+}

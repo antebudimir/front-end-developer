@@ -1,0 +1,38 @@
+.section-container {
+	@include respond-to-width(1024px) {
+		max-width: 55rem;
+		margin: auto;
+	}
+}
+
+header .section-container {
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-between, center);
+}
+
+#contact-icons .section-container {
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-around, center);
+}
+
+#profile .section-container {
+	@include flex-column-center;
+}
+
+#services .section-container {
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, wrap);
+
+		& h2 {
+			flex: 0 0 100%;
+		}
+
+		& .info-box {
+			flex: 0 0 49.15%;
+		}
+
+		& .info-box:nth-child(even) {
+			margin-right: 0.9rem;
+		}
+	}
+}

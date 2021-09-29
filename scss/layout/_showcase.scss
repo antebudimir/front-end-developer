@@ -2,5 +2,15 @@
 #showcase {
 	width: auto;
 	height: calc(100vh - 11rem);
-	background: url(../img/mobile_application.svg) no-repeat center center/cover;
+	background: url(../img/showcase-mobile.svg) no-repeat center center/cover;
+
+	@include respond-to-width(768px) {
+		height: calc(100vh - 11rem);
+		background: url(../img/showcase-tablet.svg) no-repeat center center/cover;
+	}
+
+	@include respond-to-width(1024px) {
+		height: calc(100vh - 10.9rem);
+		background: url(../img/showcase-desktop.svg) no-repeat center center/cover;
+	}
 }

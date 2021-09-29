@@ -1,0 +1,23 @@
+.slope {
+	clip-path: $primary-path;
+	width: 100%;
+	height: 5rem;
+	margin-top: -1px;
+	background-color: $tertiary-color;
+}
+
+.secondary-slope {
+	clip-path: $secondary-path;
+	margin: 0 0 -1px;
+}
+
+.break-slope-primary,
+.break-slope-secondary {
+	@include respond-to-width(1024px) {
+		height: 10rem;
+	}
+}
+
+.break-slope-secondary {
+	transform: rotate(180deg);
+}

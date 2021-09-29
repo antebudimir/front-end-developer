@@ -19,13 +19,18 @@
 }
 
 @font-face {
-	font-family: 'Poppins Regular';
-	src: url('../fonts/Poppins-Regular.woff');
+	font-family: 'Varela Round';
+	src: url('../fonts/VarelaRound-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Varta Regular';
+	src: url('../fonts/Varta-Regular.woff') format('woff');
 }
 
 // All fonts declared:
 html {
-	font-family: 'Poppins Regular', sans-serif;
+	font-family: 'Varela Round';
 }
 
 input,
@@ -40,7 +45,6 @@ button {
 h2 {
 	display: inline-block;
 	margin-bottom: 2rem;
-	margin-top: -2rem;
 	font-size: 1.3rem;
 }
 
@@ -50,35 +54,40 @@ h3 {
 }
 
 p {
-	// color: $text-secondary-color;
-	line-height: 1.7;
+	font-family: 'Varta Regular';
+	font-size: 1.1rem;
+	line-height: 1.5;
 }
 
-// li {
-// 	color: $text-primary-color;
-// 	font-size: 0.9rem;
-// }
-
-.icon-whatsapp:before {
-	content: '\ea93';
+#intro {
+	text-align: justify;
 }
 
-.icon-share2:before {
-	content: '\ea82';
+.profile-box,
+.downloader {
+	font-size: 1.2rem;
+	text-align: center;
 }
 
-.icon-phone:before {
-	content: '\e942';
+.period {
+	font-size: 0.9rem;
+	text-align: center;
 }
 
-.icon-linkedin:before {
-	content: '\eac9';
+.role {
+	font-family: 'Varela Round';
 }
 
-.icon-arrow-up2:before {
-	content: '\ea3a';
+.place {
+	font-size: 1rem;
 }
 
-.icon-github:before {
-	content: '\eab0';
+#skills {
+	text-align: justify;
+}
+
+#footer {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
 }

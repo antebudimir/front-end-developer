@@ -1,0 +1,10 @@
+.blinker {
+	animation: blinker 2500ms linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0.8;
+		color: yellow;
+	}
+}

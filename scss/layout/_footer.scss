@@ -1,15 +1,10 @@
 // Footer
 #footer {
-	padding: 1rem 0;
+	border-top: 1px solid $primary-color;
+	padding: 1.4rem 0 1rem;
 	background: $secondary-color;
-	font-size: 1rem;
-	text-align: center;
 
 	& p {
 		color: $tertiary-color;
-	}
-
-	@include respond-to-width(1024px) {
-		display: none;
 	}
 }

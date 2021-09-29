@@ -1,0 +1,33 @@
+.scrollButton {
+	border: $primary-border;
+	box-shadow: $primary-shadow;
+	position: fixed;
+	bottom: 1rem;
+	left: 1.2rem;
+	display: none;
+	width: $button-size;
+	height: $button-size;
+	padding-top: 5px;
+	background: $primary-color;
+	color: $secondary-color;
+
+	&:hover,
+	&:focus {
+		@include secondary-hover;
+	}
+
+	@include respond-to-width(1024px) {
+		right: 1rem;
+		bottom: 1rem;
+		left: initial;
+		cursor: pointer;
+	}
+}
+
+.icon-arrow-up2 {
+	font-size: 1.5rem;
+
+	&::before {
+		content: '\ea3a';
+	}
+}

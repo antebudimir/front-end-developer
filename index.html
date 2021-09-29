@@ -20,155 +20,532 @@
     <link rel="stylesheet" href="./css/main.css">
   
     <!-- Tab Icon -->
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
+    <link rel="icon" href="img/freelancer.svg">
+    <link rel="apple-touch-icon" href="img/freelancer.svg">
 </head>
 
 <body id="home">
     <!-- Header -->
     <header id="header">
-        <img class="logo-img" src="./img/freelancer.svg" alt="Freelancer illustration">
-        <a href="#home"><h1>Ante Budimir</h1></a>
+        <div class="section-container">
+            <img class="logo-img" src="./img/freelancer.svg" alt="Freelancer illustration">
+            
+            <a class="primary-heading" href="#home" title="Developer's Home"><h1>Ante Budimir</h1></a>
 
-        <nav id="navigation">
-            <div class="hamburger">
-                <i id="menu-icon" class="icon-menu"></i>
-            </div>
+            <nav id="navigation">
+                <div class="hamburger" title="Menu icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <ul class="menu">
-                <li class="menu-item"><a class="menu-link" href="#intro" title="Home">Intro</a></li>
-                <li class="menu-item"><a class="menu-link" href="#profile" title="My profile">Profile</a></li>
-                <li class="menu-item"><a class="menu-link" href="#skills" title="Skills">Skills</a></li>
-                <li class="menu-item"><a class="menu-link" href="#workflow" title="Worfkflow">Worfkflow</a></li>
-                <li class="menu-item"><a class="menu-link" href="#services" title="Services">Services</a></li>
-                <li class="menu-item"><a class="menu-link" href="#portfolio" title="Portfolio">Portfolio</a></li>
-                <li class="menu-item"><a class="menu-link" href="#clients" title="Clients">Clients</a></li>
-                <li class="menu-item"><a class="menu-link" href="#contact" title="Contact">Contact</a></li>
-            </ul>
-        </nav>
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="#intro" title="Introduction">Intro</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#profile" title="My work experience and education">Profile</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#skills" title="My programming and software skills">Skills</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#services" title="Services that I offer">Services</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#clients" title="My regular clients">Clients</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#portfolio" title="Selection of my projects">Portfolio</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#contact" title="Interested in cooperation or you just wanna reach out and say hello?">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Showcase -->
-    <section id="showcase"></section>
+    <section id="showcase">
+        <h2 class="hidden-visually">Front-End Developer for your ideas!</h2>
+    </section>
 
     <!-- Social icons -->
     <section id="contact-icons">
-        <a href="https://www.linkedin.com/in/ante-budimir/" target="_blank" rel="noopener" title="Connect with me on LinkedIn"><i class="icon-linkedin"></i></a>
-        <a href="https://github.com/antebudimir" target="_blank" rel="noopener" title="Connect with me on GitHub"><i class="icon-github"></i></a>
-        <a href="tel:+385996951148" title="Give me a Call"><i class="icon-phone"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=385996951148" target="_blank" rel="noopener" title="Message me on WhatsApp"><i class="icon-whatsapp"></i></a>
+        <div class="section-container">
+            <a class="connect" href="https://www.linkedin.com/in/ante-budimir/" target="_blank" rel="noopener" title="Connect with me on LinkedIn"><i class="connect-icon icon-linkedin"></i></a>
+            <a class="connect" href="https://github.com/antebudimir" target="_blank" rel="noopener" title="Connect with me on GitHub"><i class="connect-icon icon-github"></i></a>
+            <a class="connect" href="tel:+385996951148" title="Give me a Call"><i class="connect-icon icon-phone"></i></a>
+            <a class="connect" href="https://api.whatsapp.com/send?phone=385996951148" target="_blank" rel="noopener" title="Message me on WhatsApp"><i class="connect-icon icon-whatsapp"></i></a>
+        </div>
     </section>
 
     <!-- Intro -->
     <section id="intro">
-        <h2><span class="cardinal-number">1</span>Intro</h2>
+        <div class="section-container">
+            <h2><span class="cardinal-number">1</span>Intro</h2>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus officia iure sint dolores, a quos eaque saepe, vero consequuntur tenetur tempora et? Voluptatem nulla quibusdam atque rem quam laborum officiis, cupiditate dignissimos, labore consectetur asperiores at. Reprehenderit laborum porro cum optio natus voluptatum, consectetur, pariatur excepturi, exercitationem quia ut expedita?</p>
+            <p>Enthusiastic developer with 2 years of experience freelancing in Kazakhstan and Croatia. 
+                Focused on designs that are mobile-first, functional and user friendly above all. 
+                Proponent of vanilla JS, PWA's and accessibility in design. Extensive client management skills 
+                gained on multibillion-dollar international oil & gas projects in Russia and Kazakhstan. 
+                Synthesizer player and all things tech while not coding. Fluent in Croatian, English and Russian.</p>
 
-        <div class="info-box">2 years of experience</div>
-        <div class="info-box">50 Projects completed</div>
-        <div class="info-box">34 satisfied customers</div>
-        <div class="info-box"></div>
+            <section id="metrics">
+                <h3 class="hidden-visually">Experience metrics</h3>
+
+                <div class="info-box">
+                    <p class="service"><span class="years"></span> years of experience</p>
+                    <p class="description">2 years in front-end web development</p>
+                </div>
+                
+                <div class="info-box">
+                    <p class="service"><span class="projects"></span> projects completed</p>
+                    <p class="description">Triple figure milestone ahead</p>
+                </div>
+                
+                <div class="info-box">
+                    <p class="service"><span class="clients"></span> satisfied clients</p>
+                    <p class="description">Become one of them!</p>
+                </div>
+            </section>
+        </div>
     </section>
+    
+    <div class="slope"><!-- Slope --></div>
 
     <!-- Profile -->
     <section id="profile">
-        <h2><span class="cardinal-number">2</span>Profile</h2>
+        <div class="section-container">
+            <h2><span class="cardinal-number">2</span>Profile</h2>
 
-        <div class="profile-box">Experience</div>
+            <div class="profile-box">Experience</div>
 
-        <!-- Experience section -->
-        <section id="experience">
-            <div class="container">
-                <div class="period">2019 - present</div>
-                
-                <div class="wrapper">
-                    <p class="role">Front-End Developer</p>
-                    <p class="place">Freelancer</p>
+            <!-- Experience section -->
+            <section id="experience">
+                <div class="container">
+                    <div class="period">2019 - present</div>
+                    
+                    <div class="wrapper">
+                        <p class="role first-role">Front-End Developer</p>
+                        <p class="place">Freelancer</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2017 - 2019</div>
-                
-                <div class="wrapper">
-                    <p class="role">HSE Lead</p>
-                    <p class="place">Velesstroy LLC, Kazakhstan</p>
+                <div class="container">
+                    <div class="period">2017 - 2019</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">HSE Lead</p>
+                        <p class="place">Velesstroy LLC, Kazakhstan</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2015 - 2017</div>
-                
-                <div class="wrapper">
-                    <p class="role">HSE Trainer</p>
-                    <p class="place">Velesstroy LLC, Russia</p>
+                <div class="container">
+                    <div class="period">2015 - 2017</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">HSE Trainer</p>
+                        <p class="place">Velesstroy LLC, Russia</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2013 - 2015</div>
-                
-                <div class="wrapper">
-                    <p class="role">CEO</p>
-                    <p class="place">Protecta Horvat LLC, Bjelovar, Croatia</p>
+                <div class="container">
+                    <div class="period">2013 - 2015</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">CEO</p>
+                        <p class="place">Protecta Horvat LLC, Bjelovar, Croatia</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2011 - 2013</div>
-                
-                <div class="wrapper">
-                    <p class="role">HSE Manager</p>
-                    <p class="place">Prima Furniture LLC, Bjelovar, Croatia</p>
+                <div class="container">
+                    <div class="period">2011 - 2013</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">HSE Manager</p>
+                        <p class="place">Prima Furniture LLC, Bjelovar, Croatia</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Education section -->
-        <div class="profile-box">Education</div>
-        
-        <section id="education">
-            <div class="container">
-                <div class="period">2017</div>
-                
-                <div class="wrapper">
-                    <p class="role">NEBOSH Certificate</p>
-                    <p class="place">Glasgow, Scotland</p>
+            <!-- Education section -->
+            <div class="profile-box ">Education</div>
+            
+            <section id="education">
+                <div class="container">
+                    <div class="period">2017</div>
+                    
+                    <div class="wrapper">
+                        <p class="role first-role">NEBOSH Certificate</p>
+                        <p class="place">Glasgow, Scotland</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2016</div>
-                
-                <div class="wrapper">
-                    <p class="role">HSE Specialist</p>
-                    <p class="place">Moscow, Russia</p>
+                <div class="container">
+                    <div class="period">2016</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">HSE Specialist</p>
+                        <p class="place">Moscow, Russia</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="period">2005 - 2010</div>
-                
-                <div class="wrapper">
-                    <p class="role">HSE Engineer</p>
-                    <p class="place">College for Occupational Safety & Health, Zagreb, Croatia</p>
+                <div class="container">
+                    <div class="period">2005 - 2010</div>
+                    
+                    <div class="wrapper">
+                        <p class="role">HSE Engineer</p>
+                        <p class="place">College for Occupational Safety & Health, Zagreb, Croatia</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Download -->
-        <div class="profile-box"><a href="./Ante Budimir-CV.pdf" download title="Download a copy of my CV">Download CV</a></div>
+            </section>
+            
+            <!-- Download CV -->
+            <a class="downloader" href="./Ante Budimir-CV.pdf" download title="Download a copy of my CV">Download CV</a>
+        </div>
     </section>
 
-        <!-- Skills -->
+    <div class="slope secondary-slope"><!-- Slope --></div>
+
+    <!-- Skills -->
     <section id="skills">
-        <h2><span class="cardinal-number">3</span>Skills</h2>
+        <div class="section-container">
+            <h2><span class="cardinal-number">3</span>Skills</h2>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis saepe cum deserunt iusto explicabo! Soluta, unde. Ipsam nobis dolorem inventore, doloremque eum, nesciunt cum totam facilis ab quidem amet saepe dolore. Mollitia voluptatem sapiente neque consequatur, facilis consequuntur. Odit deleniti neque quia culpa voluptatum assumenda asperiores aliquam, possimus debitis.</p>
+            <p>Web technologies evolve daily, so you have to keep up, or you'll be left behind. I'm currently exploring Typescript and React. In my spare time, I'm researching everything privacy-related, from email providers to web browsers and the uses big tech has for our (non)transparently collected and nontransparently sold data.</p>
+
+            <section id="meter-bars">
+                <div class="bar-wrapper">
+                    <p class="skill">HTML5 <span class="percentage-number primary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill primary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">CSS3 <span class="percentage-number secondary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill secondary-fill"></div>
+                    </div>
+                </div>
+
+                <div class="bar-wrapper">
+                    <p class="skill">SCSS <span class="percentage-number secondary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill secondary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">JavaScript <span class="percentage-number tertiary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill tertiary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">3rd party API implementation <span class="percentage-number primary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill primary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">GIT <span class="percentage-number tertiary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill tertiary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">SEO <span class="percentage-number secondary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill secondary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">Adobe Photoshop <span class="percentage-number tertiary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill tertiary-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="bar-wrapper">
+                    <p class="skill">Inkscape <span class="percentage-number tertiary-percentage-number"></span></p>
+                    <div class="bar">
+                        <div class="fill tertiary-fill"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </section>
+
+    <div class="slope"><!-- Slope --></div>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="section-container">
+            <h2><span class="cardinal-number">4</span>Services</h2>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-embed2"></i> UI Development</p>
+                <p class="description">Enjoyable and frustration-free user interfaces.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-touch-app"></i> UX Design</p>
+                <p class="description">Easy, efficient, relevant and all-round pleasant experiences for your users.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-mobile"></i> Mobile-First Strategy</p>
+                <p class="description">Start with mobile and progress towards larger screens.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-mobile"></i> Mobile-First Goals</p>
+                <p class="description">Better Google ranking, higher conversion rates, larger audience coverage.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-brush"></i> Branding Design</p>
+                <p class="description">In-House Designer available - throw us your ideas, visions or just bits and pieces and get your custom-made design.</p>
+            </div>
+
+            <div class="info-box">
+                <p class="service"><i class="info-box-icon icon-clipboard-edit"></i> Illustrations</p>
+                <p class="description">Whatever your theme is, it can be done!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="slope break-slope-secondary"><!-- Slope --></div>
+
+    <!-- Clients -->
+    <section id="clients">
+        <div class="section-container">
+            <h2><span class="cardinal-number">5</span>Clients</h2>
+
+            <a href="https://www.gempathy.com/"><img src="./img/clients/gempathy-logo.svg" alt="Gempathy logo"></a>
+            <a href="https://aliyabudimir.com/"><img src="./img/clients/aliya-budimir-logo.png" alt="Aliya Budimir logo"></a>
+            <a href="https://www.bvlgari.com/"><img src="./img/clients/Bvlgari-logo.png" alt="Bvlgari logo"></a>
+
+            <!-- <p>...just to name a few...</p> -->
+        </div>
+    </section>
+
+    <div class="slope break-slope-primary">Slope</div>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="section-container">
+            <h2><span class="cardinal-number">6</span>Portfolio</h2>
+
+            <p>Check out the selection of my works across different industries and categories to get a glimpse of what you can expect from me. 
+                I do not use templates. Everything is made from scratch and customized according to your wishes. If you need a website that 
+                you're going to be able to edit on your own afterwards, i.e. a website made in content management system (CMS) like 
+                Wordpress, Wix, Joomla etc. contact me to discuss your project further.</p>
+
+            <section id="gallery">
+                <h3 class="hidden-visually">Portfolio gallery</h3>
+
+                <div class="placeholder">
+                    <a href="https://www.aliyabudimir.com" title="??"><img class="image-thumb" src="./img/Mockup.svg" loading="lazy" alt="Website of designer Aliya Budimir">
+                    
+                    <!-- <div class="project-details"> -->
+                        <!-- <p class="image-title">Magazine layout design</p> -->
+                        
+                        <!-- <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p> -->
+
+                        <!-- <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p> -->
+                    <!-- </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="https://www.antebudimir.com" title="??"><img class="image-thumb" src="./img/portfolio/bjelovar.jpg" loading="lazy" alt="Website for a historical postcards exhibition of Croatian city of Bjelovar">
+                    
+                    <!-- <div class="project-details"> -->
+                        <!-- <p class="image-title">Magazine layout design</p> -->
+                        
+                        <!-- <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p> -->
+
+                        <!-- <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p> -->
+                    <!-- </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/olimpijac.jpg" loading="lazy" alt="Website for a children's sports academy">
+                    
+                    <!-- <div class="project-details"> -->
+                        <!-- <p class="image-title">Magazine layout design</p> -->
+                        
+                        <!-- <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p> -->
+
+                        <!-- <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p> -->
+                    <!-- </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/astrologist.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/cuddlies.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/design-studio.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/engineer.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/patterns.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+
+                <div class="placeholder">
+                    <a href="./img/full/SVG_3.jpg" title="??"><img class="image-thumb" src="./img/portfolio/phoenix.jpg" loading="lazy" alt="">
+                    
+                    <!-- <div class="project-details">
+                        <p class="image-title">Magazine layout design</p>
+                        
+                        <p class="summary">Project: Sauvage fashion magazine; Layout design and preparation for printing</p>
+
+                        <p class="description">A new layout design approach for a montly fashion magazine's special 
+                            edition. The task was to create a new, more modern and visually appealing approach to a 
+                            layout design, yet keeping the general style of an in-between magazine and a newspaper.</p>
+                    </div> -->
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <div class="slope secondary-slope"><!-- Slope --></div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="section-container">
+            <h2><span class="cardinal-number">7</span>Contact</h2>
+
+            <p>Something on your mind? Get in touch via the contact form or via any other contact method listed at the top of the page. My working hours revolve around CEST time and I reply to all inquiries as soon as possible.</p>
+
+            <div class="map">
+                <iframe id="gmap" src="https://maps.google.com/maps?q=Bjelovar&t=&z=7&ie=UTF8&iwloc=&output=embed" title="My approximate location on Google Maps"></iframe>
+            </div>
+
+            <form id="contact-form" action="contact.handler.php" method="post">
+                <label for="name" class="hidden-visually">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                
+                <label for="email" class="hidden-visually">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                
+                <label for="message" class="hidden-visually">Message</label>
+                <textarea name="message" id="message" placeholder="Message" data-autoresize rows="1" required></textarea>
+        
+                <button type="submit" class="submit-button" title="Send Message">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sharing -->
+    <section id="sharing-links">
+        <h2 class="hidden-visually">Social media sharing links</h2>
+
+        <button class="icon-container toggle" title="Share">
+            <i class="icon-share2" title="Share"></i>
+            <i class="icon-x" title="Close"></i>
+        </button>
+
+        <a class="icon-container facebook" href="https://web.facebook.com/sharer.php?u=www.?????????????????????????.com" target="_blank" rel="noopener" title="Share on Facebook">
+            <i class="icon-facebook"></i>
+        </a>
+
+        <a class="icon-container whatsapp" href="whatsapp://send?text=https://www.?????????????????????????.com" target="_blank" rel="noopener" title="Share on WhatsApp">
+            <i class="icon-whatsapp"></i>
+        </a>
+    </section>
+
+    <!-- Scroll back to top button -->
+    <div>
+        <button class="scrollButton" title="Back to Top"><i class="icon-arrow-up2"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; Ante Budimir, 2019 - <span id="currentYear"></span></p>
+    </footer>
 
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
     
 </body>
 </html>
+
+<!-- 
+    - hover, focus menu items
+    - form focus-within
+    - js counter for desktop    
+    - add titles and descriptions for portfolio screenshots - not accross the image
+    - mockups add some details around the devices?
+    - create screenshots
+    - clean up leftover code
+    - PWA
+ -->

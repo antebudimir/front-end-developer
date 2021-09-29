@@ -1,0 +1,96 @@
+// Sharing links
+#sharing-links {
+	position: fixed;
+	bottom: 4.7rem;
+	left: 1.2rem;
+	display: none;
+
+	@include respond-to-width(1024px) {
+		right: 1rem;
+		left: initial;
+	}
+}
+
+.icon-container {
+	border: $primary-border;
+	box-shadow: $primary-shadow;
+	@include flex-column-center;
+	transition: display, 300ms;
+
+	&,
+	&.open {
+		opacity: 1;
+		width: $button-size;
+		height: $button-size;
+		background-color: $primary-color;
+		color: $secondary-color;
+	}
+
+	&:hover,
+	&:focus {
+		@include secondary-hover;
+	}
+
+	@include respond-to-width(1024px) {
+		cursor: pointer;
+	}
+}
+
+.icon-share2:before {
+	content: '\ea82';
+}
+
+.icon-x:before {
+	content: '\e905';
+}
+
+.icon-facebook:before {
+	content: '\ea90';
+}
+
+.icon-share2,
+.icon-x,
+.icon-facebook,
+#sharing-links .icon-whatsapp {
+	font-size: 1.5rem;
+}
+
+.toggle.open,
+.facebook.open {
+	margin-bottom: 1rem;
+}
+
+.toggle.open .icon-share2,
+.toggle .icon-x {
+	display: none;
+}
+
+.toggle.open .icon-x {
+	display: initial;
+}
+
+.facebook,
+.whatsapp {
+	opacity: 0;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.facebook {
+	&:hover,
+	&:focus {
+		background: rgb(60, 91, 155);
+		color: $secondary-color;
+	}
+}
+
+.whatsapp {
+	&:hover,
+	&:focus {
+		background: rgb(11, 194, 4);
+		color: $secondary-color;
+	}
+}

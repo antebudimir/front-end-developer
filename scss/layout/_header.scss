@@ -3,8 +3,7 @@ header {
 	z-index: 100;
 	position: sticky;
 	top: 0;
-	@include flex-layout(row, nowrap);
-	@include flex-alignment(space-between, center);
+	box-shadow: $secondary-shadow;
 	padding: 1rem;
 	background-color: $primary-color;
 	color: $secondary-color;
@@ -20,10 +19,15 @@ header {
 	}
 
 	@include respond-to-width(1024px) {
-		width: 9rem;
+		margin-right: 1rem;
 	}
 }
 
 .logo:focus .logo-img {
 	// @include pop-on-hover;
+}
+
+#header-box {
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(center, center);
 }

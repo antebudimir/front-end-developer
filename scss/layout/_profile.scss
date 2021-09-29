@@ -1,6 +1,5 @@
 #profile {
-	@include flex-column-center;
-	padding: 3rem 1rem 1rem;
+	padding: $primary-padding;
 	color: $secondary-color;
 
 	& h2 {
@@ -13,38 +12,52 @@
 	}
 }
 
-.profile-box {
+.profile-box,
+.downloader {
 	border: $primary-border;
 	box-shadow: $primary-shadow;
-	width: 8rem;
+	width: 8.5rem;
 	padding: 0.5rem 0;
 	background-color: $primary-color;
 	color: $secondary-color;
-	font-size: 1.2rem;
-	text-align: center;
-	margin: 0 auto;
+}
 
+.downloader {
+	margin-top: 2rem;
+
+	&:hover,
+	&:focus {
+		@include secondary-hover;
+	}
+}
+
+.profile-box {
 	&::after {
 		z-index: -1;
 		content: '';
 		position: absolute;
 		left: 50%;
-		width: 2px;
+		width: 0.125rem;
 		margin-top: 2rem;
 		background: $primary-color;
 	}
 
 	&:nth-of-type(1)::after {
-		height: 32rem;
+		height: 40rem;
+	}
+
+	&:nth-of-type(2) {
+		margin-top: 2rem;
 	}
 
 	&:nth-of-type(2)::after {
-		height: 21rem;
+		height: 25.2rem;
 	}
 
-	&:nth-of-type(2),
-	&:nth-of-type(3) {
-		margin-top: 2rem;
+	@include respond-to-width(1082px) {
+		&:nth-of-type(2)::after {
+			height: 20rem;
+		}
 	}
 }
 
@@ -54,13 +67,11 @@
 
 .period {
 	position: relative;
-	padding: 0.5rem;
-	width: 7rem;
+	width: 8rem;
 	height: 1.9rem;
-	margin: 2rem 0 0 0.5rem;
+	margin: 2rem 0.5rem 0 0;
+	padding: 0.5rem;
 	background-color: $tertiary-color;
-	font-size: 0.8rem;
-	text-align: center;
 
 	&::before,
 	&::after {
@@ -71,42 +82,64 @@
 	}
 
 	&::before {
-		border-width: 8px 0 8px 18px;
-		top: 8px;
-		right: -10px;
+		border-width: 0.5rem 0 0.5rem 1.125rem;
+		top: 0.5rem;
+		right: -0.625rem;
 	}
 
 	&::after {
-		border-width: 5px 0 5px 15px;
-		top: 12px;
-		right: -3px;
+		border-width: 0.3125rem 0 0.3125rem 0.9375rem;
+		top: 0.8rem;
+		right: -0.1875rem;
 	}
 }
 
 .wrapper {
 	width: 9.4rem;
+
+	@include respond-to-width(1082px) {
+		width: auto;
+	}
 }
 
 .role {
 	position: relative;
-	margin: 2.4rem 0 0 2.3rem;
-	margin: 38px 0 0 28px;
+	margin: 2.3125rem 0 0 1.75rem;
 	color: $primary-color;
-	font-size: 0.8rem;
 
 	&::before {
 		position: absolute;
 		top: 30%;
-		left: -16px;
+		left: -1.5rem;
 		content: '';
-		width: 8px;
-		height: 8px;
+		width: 0.5rem;
+		height: 0.5rem;
 		background: $primary-color;
 	}
 }
 
+.first-role {
+	margin-top: 1.8125rem;
+
+	@include respond-to-width(1082px) {
+		margin-top: 2.3rem;
+	}
+}
+
 .place {
-	margin: 0 0 0 28px;
+	margin-left: 1.75rem;
 	color: $tertiary-color;
-	font-size: 0.8rem;
+}
+
+#experience {
+	@include respond-to-width(1082px) {
+		margin-left: 8rem;
+	}
+}
+
+#education {
+	// 1082 is the breaking point where description text gets to one line.
+	@include respond-to-width(1082px) {
+		margin-left: 16.15rem;
+	}
 }

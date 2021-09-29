@@ -8,19 +8,17 @@
 }
 
 html {
-	// color: $text-primary-color;
+	@include respond-to-width(600px) {
+		font-size: 130%;
+	}
 
-	// @include respond-to-width(600px) {
-	// 	font-size: 120%;
-	// }
+	@include respond-to-width(1024px) {
+		font-size: 100%;
+	}
 
-	// @include respond-to-width(1024px) {
-	// 	font-size: 100%;
-	// }
-
-	// @include respond-to-width(1600px) {
-	// 	font-size: 120%;
-	// }
+	@include respond-to-width(1600px) {
+		font-size: 120%;
+	}
 
 	// @include respond-to-w-and-h(2200px, 1200px) {
 	// 	font-size: 150%;
@@ -28,13 +26,6 @@ html {
 
 	// @include respond-to-height(2000px) {
 	// 	font-size: 250%;
-	// }
-}
-
-body {
-	// @include respond-to-width(1024px) {
-	// 	@include flex-row-center;
-	// 	height: 100vh;
 	// }
 }
 

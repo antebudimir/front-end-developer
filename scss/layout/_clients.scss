@@ -1,0 +1,20 @@
+#clients {
+	padding: 2rem 1rem;
+
+	& .cardinal-number {
+		color: $secondary-color;
+	}
+
+	& a:not(:last-of-type) > img {
+		margin-bottom: 3rem;
+	}
+
+	& img {
+		width: 100%;
+
+		@include respond-to-width(600px) {
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+}

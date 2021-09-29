@@ -1,0 +1,32 @@
+// Services
+#services {
+	padding: $primary-padding;
+
+	& h2 {
+		color: $tertiary-color;
+	}
+
+	& .cardinal-number {
+		color: $secondary-color;
+	}
+}
+
+.icon-clipboard-edit:before {
+	content: '\e900';
+}
+
+.icon-brush:before {
+	content: '\e901';
+}
+
+.icon-mobile:before {
+	content: '\e958';
+}
+
+.icon-embed2:before {
+	content: '\ea80';
+}
+
+.icon-touch-app:before {
+	content: '\e903';
+}
