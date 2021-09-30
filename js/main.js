@@ -98,9 +98,17 @@
 							projects = document.querySelector('.projects'),
 							clients = document.querySelector('.clients');
 
-						counter(years, 10, 150);
-						counter(projects, 95, 35);
-						counter(clients, 35, 130);
+						// timing as mobile window progresess
+						if (window.innerWidth < 1024) {
+							counter(years, 10, 150);
+							counter(projects, 95, 35);
+							counter(clients, 35, 130);
+						} // timing to end at the same time
+						else if (window.innerWidth > 1023) {
+							counter(years, 10, 150);
+							counter(projects, 95, 18);
+							counter(clients, 35, 50);
+						}
 
 						function counter(subject, target, timing) {
 							let count = 0;
