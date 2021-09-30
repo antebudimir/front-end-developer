@@ -40,6 +40,7 @@ button {
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
+	text-align: center;
 }
 
 h2 {
@@ -63,6 +64,29 @@ p {
 	text-align: justify;
 }
 
+.info-box {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.info-box-icon {
+	font-size: 1.5rem;
+}
+
+.service {
+	font: 600 1.5rem 'Varela Round';
+
+	@include respond-to-width(600px) {
+		font-size: 2rem;
+	}
+}
+
+.description {
+	@include respond-to-width(600px) {
+		font-size: 1.3rem;
+	}
+}
+
 .profile-box,
 .downloader {
 	font-size: 1.2rem;
@@ -84,6 +108,10 @@ p {
 
 #skills {
 	text-align: justify;
+}
+
+.project-title {
+	font-family: 'Varela Round';
 }
 
 #footer {

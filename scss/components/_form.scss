@@ -16,12 +16,15 @@ textarea {
 	padding: 1rem 0;
 	background-color: $secondary-color;
 	color: $tertiary-color;
-	text-align: center;
 
 	@include respond-to-width(1024px) {
 		width: 26.5rem;
 		padding: 1.55rem 0;
 	}
+}
+
+input {
+	margin-bottom: 1rem;
 }
 
 textarea {
@@ -32,16 +35,12 @@ textarea {
 	color: $quaternary-color;
 }
 
-input {
-	margin-bottom: 1rem;
-}
-
 input:focus,
 input:focus-within,
 textarea:focus,
 textarea:focus-within {
-	// border: 1px solid $secondary-color;
-	// box-shadow: 0 0 0 100vmax $tertiary-color-transparent;
+	border: 1px solid $primary-color;
+	box-shadow: 0 0 0 100vmax $tertiary-color-transparent;
 }
 
 .submit-button {

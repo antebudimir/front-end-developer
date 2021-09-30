@@ -1,57 +1,4 @@
 // Menu
-.menu {
-	display: none;
-	position: fixed;
-	top: 4.2rem;
-	left: 0;
-	width: 100%;
-	height: calc(100vh - 4.2rem);
-	background-color: $primary-color;
-	text-align: center;
-
-	@include respond-to-width(1024px) {
-		@include flex-layout(row, nowrap);
-		position: initial;
-		top: initial;
-		width: initial;
-		height: initial;
-	}
-}
-
-.menu-item {
-	@include respond-to-width(1024px) {
-		border: none;
-
-		&:not(:last-child) {
-			margin-right: 1rem;
-		}
-	}
-}
-
-.menu-link {
-	display: block;
-	width: 10rem;
-	padding: 0.9rem 0;
-	font-size: 1.2rem;
-	font-weight: 700;
-
-	// &:hover,
-	// &:focus {
-	// 	color: $tertiary-color;
-	// }
-
-	@include respond-to-width(600px) {
-		font-size: 1.5rem;
-	}
-
-	@include respond-to-width(1024px) {
-		display: initial;
-		width: initial;
-		font-size: 1rem;
-		font-weight: initial;
-	}
-}
-
 .hamburger {
 	position: relative;
 	width: 1.8rem;
@@ -108,5 +55,65 @@
 
 	@include respond-to-width(1024px) {
 		display: none;
+	}
+}
+
+.menu {
+	display: none;
+	position: fixed;
+	top: 4.2rem;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 4.2rem);
+	background-color: $primary-color;
+	text-align: center;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+		position: initial;
+		top: initial;
+		width: initial;
+		height: initial;
+	}
+}
+
+.menu-item {
+	@include respond-to-width(1024px) {
+		border: none;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		transition: transform 300ms;
+	}
+}
+
+.menu-link {
+	display: block;
+	width: 10rem;
+	padding: 0.9rem 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+
+	&:hover,
+	&:focus {
+		color: $tertiary-color;
+		font-weight: 700;
+		transition: color 500ms;
+	}
+
+	@include respond-to-width(600px) {
+		font-size: 1.5rem;
+	}
+
+	@include respond-to-width(1024px) {
+		display: initial;
+		width: initial;
+		font-size: 1rem;
+		font-weight: initial;
 	}
 }
