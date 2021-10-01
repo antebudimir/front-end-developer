@@ -1,50 +1,89 @@
+// Register SW
+if ('serviceWorker' in navigator) {
+	// register him
+	navigator.serviceWorker
+		.register('/sw.js', {
+			updateViaCache: 'none',
+			scope: '/',
+		})
+		.then(() => {
+			// finished registering
+		})
+		.catch((err) => {
+			console.warn('Failed to register', err.message);
+		});
+
+	// listen for messages
+	navigator.serviceWorker.addEventListener('message', ({ data }) => {
+		// received a message from the service worker
+		console.log(data, 'New message from your service worker.');
+	});
+}
+
+// SYNC
+async function registerPeriodicCheck() {
+	const registration = await navigator.serviceWorker.ready;
+	try {
+		await registration.periodicSync.register('latest-update', {
+			minInterval: 24 * 60 * 60 * 1000,
+		});
+	} catch {
+		console.log('Periodic sync could not be registered!');
+	}
+}
+
+navigator.serviceWorker.ready.then((registration) => {
+	registration.periodicSync.getTags().then((tags) => {
+		if (tags.includes('latest-update')) skipDownloadingLatestUpdateOnPageLoad();
+	});
+});
+
 // Slide-In effect
-// (function slideIn() {
-// 	const slideIns = document.querySelectorAll('.js-slidein');
+(function slideIn() {
+	const slideIns = document.querySelectorAll('.js-slidein');
 
-// 	window.addEventListener('scroll', slideIn);
+	window.addEventListener('scroll', slideIn);
 
-// 	slideIns.forEach((element) => {
-// 		const triggerBottom = window.innerHeight / 1.1;
-// 		const elementTop = element.getBoundingClientRect().top;
+	slideIns.forEach((element) => {
+		const triggerBottom = window.innerHeight / 1.1;
+		const elementTop = element.getBoundingClientRect().top;
 
-// 		if (triggerBottom > elementTop) {
-// 			element.classList.add('show');
-// 		} else {
-// 			element.classList.remove('show');
-// 		}
-// 	});
-// })();
+		if (triggerBottom > elementTop) {
+			element.classList.add('show');
+		} else {
+			element.classList.remove('show');
+		}
+	});
+})();
 
 // Shrink header on scroll
-// (function shrinkHeader() {
-// 	const header = document.querySelector('#header'),
-// 		logo = document.querySelector('.logo-img'),
-// 		menu = document.querySelector('.menu');
+(function shrinkHeader() {
+	const header = document.querySelector('#header'),
+		h1 = document.querySelector('h1'),
+		logoImg = document.querySelector('.logo-img'),
+		menu = document.querySelector('.menu');
 
-// 	window.addEventListener('scroll', shrinkHeader);
+	window.addEventListener('scroll', shrinkHeader);
 
-// 	if (window.innerWidth < 1024) {
-// 		if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-// 			header.style.borderBottom = '1px solid rgba(75, 75, 75, 0.2)';
-// 			logo.style.width = '5rem';
-// 			menu.style.top = '3.9rem';
-// 			menu.style.height = 'calc(100vh - 4rem)';
-// 		} else {
-// 			header.style.borderBottom = 'none';
-// 			logo.style.width = '7rem';
-// 			menu.style.top = '4.93rem';
-// 		}
-// 	} else if (window.innerWidth > 1023) {
-// 		if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-// 			header.style.borderBottom = '1px solid rgba(75, 75, 75, 0.2)';
-// 			logo.style.width = '7rem';
-// 		} else {
-// 			header.style.borderBottom = 'none';
-// 			logo.style.width = '9rem';
-// 		}
-// 	}
-// })();
+	if (window.innerWidth < 1024) {
+		if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+			header.style.transition = 'padding 300ms';
+			header.style.padding = '0.5rem 1rem';
+			logoImg.style.width = '1.8rem';
+			h1.style.fontSize = '1.5rem';
+			logoImg.style.transition = 'width 300ms';
+			h1.style.transition = 'font-size 300ms';
+			menu.style.top = '2.77rem';
+			menu.style.height = 'calc(100vh - 2.8rem)';
+		} else {
+			header.style.padding = '1rem';
+			logoImg.style.width = '2.3rem';
+			h1.style.fontSize = '2rem';
+			menu.style.top = '4.2rem';
+			menu.style.height = 'calc(100vh - 4.2rem)';
+		}
+	}
+})();
 
 // Hamburger menu
 (function hamburgerMenu() {
@@ -60,7 +99,7 @@
 					menu.style.flexFlow = 'column nowrap';
 					menu.style.justifyContent = 'center';
 					menu.style.alignItems = 'center';
-					menu.style.animation = 'slideIn 400ms ease-in';
+					menu.style.animation = 'slideIn 300ms ease-in';
 				}, 1);
 
 				hamburger.classList.toggle('open');
@@ -277,9 +316,9 @@
 	toggle.addEventListener('click', () => {
 		const iconContainers = document.querySelectorAll('.icon-container');
 
-		for (let i = 0; i < iconContainers.length; i++) {
-			iconContainers[i].classList.toggle('open');
-		}
+		iconContainers.forEach((iconContainer) => {
+			iconContainer.classList.toggle('open');
+		});
 	});
 })();
 
