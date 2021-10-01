@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Construction company with a 100-year history and more than 20.000 projects completed. Reliable company from the past for the future">
-    <meta name="keywords" content="construction, buidling, weatherproofing, facade restoration, maintenance, repairs">
+    <meta name="description" content="Enthusiastic developer with 2 years of experience freelancing in Kazakhstan and Croatia. 
+                                      Focused on designs that are mobile-first, functional and user friendly above all. 
+                                      Fluent in Croatian, English and Russian.">
+    <meta name="keywords" content="developer, front-end, design, development, mobile-first, javascript, css, html, web, custom">
+    <meta name="theme-color" content="#e43131">
     <meta name="author" content="Ante Budimir">
 
     <!-- Img preview for sharing -->
-    <meta property="og:image" content="./img/projects/residential/residential-housing-1.jpg"/>
-    <meta property="og:title" content="Phoenix Construction Services"/>
-    <meta property="og:description" content="Reliable company from the past for the future"/>
+    <meta property="og:image" content="./img/showcase-mobile.svg"/>
+    <meta property="og:title" content="Ante Budimir | Front-End Developer"/>
+    <meta property="og:description" content="Front-End Developer for your projects"/>
 
     <title>Ante Budimir | Front-End Developer</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json">
 
     <!-- Stylesheet -->
     <link rel="preload" href="./css/main.css" as="style">
     <link rel="stylesheet" href="./css/main.css">
   
     <!-- Tab Icon -->
-    <link rel="icon" href="img/logo-img.svg">
-    <link rel="apple-touch-icon" href="img/logo-img.svg">
+    <link rel="icon" href="img/logo-img.png">
+    <link rel="apple-touch-icon" href="img/logo-img.png">
 </head>
 
 <body id="home">
     <!-- Header -->
     <header id="header">
         <div class="section-container">
-            <img class="logo-img" src="./img/logo-img.svg" alt="Freelancer coding illustration">
-            
+            <img class="logo-img" src="./img/logo-img.png" alt="Freelancer coding illustration">
+
             <a class="primary-heading" href="#home" title="Developer's Home"><h1>Ante Budimir</h1></a>
 
             <nav id="navigation">
@@ -60,6 +66,8 @@
 
     <!-- Social icons -->
     <section id="contact-icons">
+        <h2 class="hidden-visually">Connect with me through social media</h2>
+
         <div class="section-container">
             <a class="connect" href="https://www.linkedin.com/in/ante-budimir/" target="_blank" rel="noopener" title="Connect with me on LinkedIn"><i class="connect-icon icon-linkedin"></i></a>
             <a class="connect" href="https://github.com/antebudimir" target="_blank" rel="noopener" title="Connect with me on GitHub"><i class="connect-icon icon-github"></i></a>
@@ -111,6 +119,8 @@
 
             <!-- Experience section -->
             <section id="experience">
+                <h3 class="hidden-visually">My experience overview</h3>
+
                 <div class="container">
                     <div class="period">2019 - present</div>
                     
@@ -161,6 +171,8 @@
             <div class="profile-box ">Education</div>
             
             <section id="education">
+                <h3 class="hidden-visually">My education overview</h3>
+
                 <div class="container">
                     <div class="period">2017</div>
                     
@@ -190,7 +202,7 @@
             </section>
             
             <!-- Download CV -->
-            <a class="downloader" href="./Ante Budimir-CV.pdf" download title="Download a copy of my CV">Download CV</a>
+            <a class="downloader" href="./Ante-Budimir-CV.pdf" download title="Download a copy of my CV">Download CV</a>
         </div>
     </section>
 
@@ -204,6 +216,8 @@
             <p>Web technologies evolve daily, so you have to keep up, or you'll be left behind. I'm currently exploring Typescript and React. In my spare time, I'm researching everything privacy-related, from email providers to web browsers and the uses big tech has for our (non)transparently collected and nontransparently sold data.</p>
 
             <section id="meter-bars">
+                <h3 class="hidden-visually">My skills overview</h3>
+
                 <div class="bar-wrapper">
                     <p class="skill">HTML5 <span class="percentage-number primary-percentage-number"></span></p>
                     <div class="bar">
@@ -316,11 +330,9 @@
         <div class="section-container">
             <h2><span class="cardinal-number">5</span>Clients</h2>
 
-            <a href="https://www.gempathy.com/"><img src="./img/clients/gempathy-logo.svg" alt="Gempathy logo"></a>
-            <a href="https://aliyabudimir.com/"><img src="./img/clients/aliya-budimir-logo.png" alt="Aliya Budimir logo"></a>
-            <a href="https://www.bvlgari.com/"><img src="./img/clients/Bvlgari-logo.png" alt="Bvlgari logo"></a>
-
-            <!-- <p>...just to name a few...</p> -->
+            <a class="client-link" href="https://www.gempathy.com/" title="Link to the Gempathy website"><img class="client-logo js-slidein" src="./img/clients/gempathy-logo.svg" alt="Gempathy logo" loading="lazy"></a>
+            <a class="client-link" href="https://aliyabudimir.com/" title="Link to the Aliya Budimir website"><img class="client-logo js-slidein" src="./img/clients/aliya-budimir-logo.png" alt="Aliya Budimir logo" loading="lazy"></a>
+            <a class="client-link" href="https://www.bvlgari.com/" title="Link to the Bvlgari website"><img class="client-logo js-slidein" src="./img/clients/Bvlgari-logo.png" alt="Bvlgari logo" loading="lazy"></a>
         </div>
     </section>
 
@@ -342,8 +354,8 @@
                 <div class="project-container">
                     <p class="project-title">Art Exhibition Website</p>
 
-                    <a href="https://www.aliyabudimir.com" title="??">
-                        <img class="image-thumb" src="./img/portfolio/cuddlies-mockup.jpg" loading="lazy" alt="">
+                    <a class="mockup-link" href="https://www.thecuddlies.art" title="Link to the Cuddlies exhibition website">
+                        <img class="mockup-img" src="./img/portfolio/cuddlies-mockup.jpg" alt="Cuddlies exhibition website mockup" loading="lazy">
                     </a>
 
                     <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, iste.</p>
@@ -352,8 +364,8 @@
                 <div class="project-container">
                     <p class="project-title">Historical Postcards Exhibition</p>
 
-                    <a href="https://www.antebudimir.com" title="??">
-                        <img class="image-thumb" src="./img/portfolio/bjelovar-mockup.jpg" loading="lazy" alt="">
+                    <a class="mockup-link" href="https://www.bjelovarkrozgodine.antebudimir.com" title="Link to the Bjelovar postcards exhibition website">
+                        <img class="mockup-img" src="./img/portfolio/bjelovar-mockup.jpg" alt="City of Bjelovar historical postcards exhibition website mockup" loading="lazy">
                     </a>
 
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt tenetur eos, ab 
@@ -363,8 +375,8 @@
                 <div class="project-container">
                     <p class="project-title">Astrologist Landing Page</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/astrologist-mockup.jpg" loading="lazy" alt="Website for a children's sports academy">
+                    <a class="mockup-link" href="https://www.astrology.com.kz" title="Link to the Almaty astrologist website">
+                        <img class="mockup-img" src="./img/portfolio/astrologist-mockup.jpg" alt="Astrologist website mockup" loading="lazy">
                     </a>
                     
                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti pariatur inventore quaerat placeat a sit, esse eaque animi fuga, consequuntur ratione voluptates quis totam tempore nemo, nostrum iste sint earum.</p>
@@ -373,8 +385,8 @@
                 <div class="project-container">
                     <p class="project-title">Design Studio</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/design-studio-mockup.jpg" loading="lazy" alt="">
+                    <a class="mockup-link" href="https://www.maslatsova.antebudimir.com" title="Link to the interior design studio website">
+                        <img class="mockup-img" src="./img/portfolio/design-studio-mockup.jpg" alt="Interior design studio mockup" loading="lazy">
                     </a>
                     
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt tenetur eos, ab 
@@ -384,8 +396,8 @@
                 <div class="project-container">
                     <p class="project-title">Children's Sports Academy</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/academy-mockup.jpg" loading="lazy" alt="Mockup of a website for a children's sports academy">
+                    <a class="mockup-link" href="https://www.maliolimpijac.antebudimir.com" title="Link to the children's sports academy website">
+                        <img class="mockup-img" src="./img/portfolio/academy-mockup.jpg" alt="Children's sports academy website mockup" loading="lazy">
                     </a>
                     
                     <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quo doloremque dignissimos neque maxime. Temporibus et commodi quod sint soluta quae provident assumenda. Cumque provident praesentium fuga commodi pariatur itaque!?</p>
@@ -394,8 +406,8 @@
                 <div class="project-container">
                     <p class="project-title">Petroleum Engineer Portfolio</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio//petroleum-engineer-mockup.jpg" loading="lazy" alt="">
+                    <a class="mockup-link" href="https://www.ivanbudimir.antebudimir.com" title="Link to the Petroleum Engineer website">
+                        <img class="mockup-img" src="./img/portfolio//petroleum-engineer-mockup.jpg" alt="Petroleum Engineer website mockup" loading="lazy">
                     </a>
                     
                     <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In blanditiis nulla rem voluptatibus, porro beatae natus facere earum soluta ea quam fuga, tempora optio perferendis est voluptatum corporis repudiandae sit ratione officia cum modi? Iusto vitae delectus incidunt consequatur architecto?</p>
@@ -404,8 +416,8 @@
                 <div class="project-container">
                     <p class="project-title">Interior Designer Portfolio</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/designer-mockup.jpg" loading="lazy" alt="Website for a historical postcards exhibition of Croatian city of Bjelovar">
+                    <a class="mockup-link" href="https://www.aliyabudimir.com" title="Link to the Interior and graphic designer website">
+                        <img class="mockup-img" src="./img/portfolio/designer-mockup.jpg" alt="Interior and graphic designer website mockup" loading="lazy">
                     </a>
              
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt tenetur eos, ab 
@@ -415,8 +427,8 @@
                 <div class="project-container">
                     <p class="project-title">Construction Company</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/construction-mockup.jpg" loading="lazy" alt="Website of designer Aliya Budimir">
+                    <a class="mockup-link" href="https://www.construction.antebudimir.com" title="Link to the construction company website">
+                        <img class="mockup-img" src="./img/portfolio/construction-mockup.jpg" alt="Construction company website mockup" loading="lazy">
                     </a>
                                         
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt tenetur eos, ab 
@@ -426,8 +438,8 @@
                 <div class="project-container">
                     <p class="project-title">Band Website</p>
 
-                    <a href="./img/full/SVG_3.jpg" title="??">
-                        <img class="image-thumb" src="./img/portfolio/band-mockup.jpg" loading="lazy" alt="">
+                    <a class="mockup-link" href="https://www.patternsofattachment.antebudimir.com" title="Link to the Patterns of Attachment band website">
+                        <img class="mockup-img" src="./img/portfolio/band-mockup.jpg" alt="Patterns of Attachment band website mockup" loading="lazy">
                     </a>
                                         
                     <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, veniam soluta fugiat enim laborum accusamus a mollitia tenetur ex, corporis quia vero repellendus aperiam pariatur expedita, voluptas necessitatibus quos nobis!</p>
@@ -473,11 +485,11 @@
             <i class="icon-x" title="Close"></i>
         </button>
 
-        <a class="icon-container facebook" href="https://web.facebook.com/sharer.php?u=www.?????????????????????????.com" target="_blank" rel="noopener" title="Share on Facebook">
+        <a class="icon-container facebook" href="https://web.facebook.com/sharer.php?u=www.developer.antebudimir.com" target="_blank" rel="noopener" title="Share on Facebook">
             <i class="icon-facebook"></i>
         </a>
 
-        <a class="icon-container whatsapp" href="whatsapp://send?text=https://www.?????????????????????????.com" target="_blank" rel="noopener" title="Share on WhatsApp">
+        <a class="icon-container whatsapp" href="whatsapp://send?text=https://www.developer.antebudimir.com" target="_blank" rel="noopener" title="Share on WhatsApp">
             <i class="icon-whatsapp"></i>
         </a>
     </section>
@@ -497,12 +509,3 @@
     
 </body>
 </html>
-
-<!-- 
-    - hover focus for ante budimir h1
-    - only font family in typography
-    - slide in maybe?
-    - scrollbars styling
-    - shrink header?
-    - PWA
- -->
