@@ -1,0 +1,31 @@
+{
+	"name": "Ante Budimir | Front-End Developer",
+	"short_name": "Ante Budimir | Front-End Developer",
+	"description": "Enthusiastic developer with 2 years of experience freelancing in Kazakhstan and Croatia. Focused on designs that are mobile-first, functional and user friendly above all. Fluent in Croatian, English and Russian.",
+	"start_url": "/",
+	"scope": ".",
+	"background_color": "#e43131",
+	"theme_color": "#e43131",
+	"display": "standalone",
+	"orientation": "portrait",
+	"dir": "ltr",
+	"lang": "en",
+	"categories": [
+		"developer",
+		"front-end",
+		"web",
+		"design",
+		"development",
+		"mobile-first",
+		"javascript",
+		"multilingual"
+	],
+	"icons": [
+		{
+			"src": "img/logo-img.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}
