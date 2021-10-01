@@ -28,7 +28,9 @@ input {
 }
 
 textarea {
-	display: block;
+	@include respond-to-width(1024px) {
+		block-size: 85px; // Firefox leveling
+	}
 }
 
 ::placeholder {
@@ -53,7 +55,7 @@ textarea:focus-within {
 
 	&:focus,
 	&:hover {
-		@include secondary-hover;
+		@include tertiary-state;
 	}
 
 	@include respond-to-width(1024px) {

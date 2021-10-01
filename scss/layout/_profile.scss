@@ -20,6 +20,8 @@
 	padding: 0.5rem 0;
 	background-color: $primary-color;
 	color: $secondary-color;
+	font-size: 1.2rem;
+	text-align: center;
 }
 
 .downloader {
@@ -27,7 +29,7 @@
 
 	&:hover,
 	&:focus {
-		@include secondary-hover;
+		@include tertiary-state;
 	}
 }
 
@@ -72,6 +74,8 @@
 	margin: 2rem 0.5rem 0 0;
 	padding: 0.5rem;
 	background-color: $tertiary-color;
+	font-size: 0.9rem;
+	text-align: center;
 
 	&::before,
 	&::after {
@@ -129,6 +133,7 @@
 .place {
 	margin-left: 1.75rem;
 	color: $tertiary-color;
+	font-size: 1rem;
 }
 
 #experience {

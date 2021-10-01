@@ -22,9 +22,14 @@
 	font-weight: 700;
 }
 
-.image-thumb {
+.mockup-img {
 	width: 100%;
 	height: auto;
+}
+
+.mockup-img:hover,
+.mockup-link:focus > .mockup-img {
+	@include quaternary-state;
 }
 
 .project-description {

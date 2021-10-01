@@ -6,6 +6,8 @@
 	min-height: 40vh;
 	margin-bottom: 1rem;
 	padding: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
 
 	@include respond-to-width(600px) {
 		min-height: 30vh;
@@ -27,7 +29,24 @@
 	color: $primary-color;
 }
 
+.service {
+	font-size: 1.5rem;
+	font-weight: 600;
+
+	@include respond-to-width(600px) {
+		font-size: 2rem;
+	}
+}
+
+.info-box-icon {
+	font-size: 1.5rem;
+}
+
 .description {
 	margin-top: 1rem;
 	color: $tertiary-color;
+
+	@include respond-to-width(600px) {
+		font-size: 1.3rem;
+	}
 }

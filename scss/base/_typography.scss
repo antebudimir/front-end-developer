@@ -21,16 +21,22 @@
 @font-face {
 	font-family: 'Varela Round';
 	src: url('../fonts/VarelaRound-Regular.woff') format('woff');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Varta Regular';
 	src: url('../fonts/Varta-Regular.woff') format('woff');
+	font-display: swap;
 }
 
 // All fonts declared:
-html {
-	font-family: 'Varela Round';
+
+html,
+.service,
+.role,
+.project-title {
+	font-family: 'Varela Round', Arial, Helvetica, sans-serif;
 }
 
 input,
@@ -41,6 +47,10 @@ button {
 	font-family: inherit;
 	font-size: inherit;
 	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
 }
 
 h2 {
@@ -55,67 +65,7 @@ h3 {
 }
 
 p {
-	font-family: 'Varta Regular';
+	font-family: 'Varta Regular', Arial, Helvetica, sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.5;
-}
-
-#intro {
-	text-align: justify;
-}
-
-.info-box {
-	font-size: 1.5rem;
-	text-align: center;
-}
-
-.info-box-icon {
-	font-size: 1.5rem;
-}
-
-.service {
-	font: 600 1.5rem 'Varela Round';
-
-	@include respond-to-width(600px) {
-		font-size: 2rem;
-	}
-}
-
-.description {
-	@include respond-to-width(600px) {
-		font-size: 1.3rem;
-	}
-}
-
-.profile-box,
-.downloader {
-	font-size: 1.2rem;
-	text-align: center;
-}
-
-.period {
-	font-size: 0.9rem;
-	text-align: center;
-}
-
-.role {
-	font-family: 'Varela Round';
-}
-
-.place {
-	font-size: 1rem;
-}
-
-#skills {
-	text-align: justify;
-}
-
-.project-title {
-	font-family: 'Varela Round';
-}
-
-#footer {
-	font-size: 1rem;
-	font-weight: 600;
-	text-align: center;
 }

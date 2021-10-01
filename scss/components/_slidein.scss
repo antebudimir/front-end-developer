@@ -1,0 +1,11 @@
+// Slide in off-screen elements when coming onto the screen
+.js-slidein {
+	opacity: 0;
+	transform: translateY(7rem);
+	transition: all 400ms ease-in-out;
+}
+
+.js-slidein.show {
+	opacity: 1;
+	transform: translateY(0);
+}

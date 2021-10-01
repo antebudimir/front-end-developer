@@ -15,7 +15,7 @@
 	@include respond-to-width(1024px) {
 		flex: 0 0 49.15%;
 
-		&:nth-child(odd) {
+		&:nth-child(even) {
 			margin-right: 0.9rem;
 		}
 	}

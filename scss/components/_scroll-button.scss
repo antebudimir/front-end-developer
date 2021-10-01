@@ -13,7 +13,7 @@
 
 	&:hover,
 	&:focus {
-		@include secondary-hover;
+		@include tertiary-state;
 	}
 
 	@include respond-to-width(1024px) {

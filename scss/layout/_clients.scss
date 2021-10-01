@@ -4,17 +4,27 @@
 	& .cardinal-number {
 		color: $secondary-color;
 	}
+}
 
-	& a:not(:last-of-type) > img {
+.client-link {
+	&:not(:last-of-type) > .client-logo {
 		margin-bottom: 3rem;
 	}
 
-	& img {
-		width: 100%;
+	&:focus > .client-logo {
+		@include quaternary-state;
+	}
+}
 
-		@include respond-to-width(600px) {
-			width: 70%;
-			margin: 0 auto;
-		}
+.client-logo {
+	width: 100%;
+
+	&:hover {
+		@include quaternary-state;
+	}
+
+	@include respond-to-width(600px) {
+		width: 70%;
+		margin: 0 auto;
 	}
 }

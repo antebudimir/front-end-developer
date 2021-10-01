@@ -1,13 +1,17 @@
 // styles related to the scrollbars
-#resume {
-	scrollbar-width: thin;
+html,
+body {
+	scrollbar-color: $primary-color $tertiary-color;
 }
 
-#resume::-webkit-scrollbar {
-	width: 8px;
+body::-webkit-scrollbar {
+	width: 17px;
 }
 
-#resume::-webkit-scrollbar-thumb {
-	border-radius: $border-radius-primary;
-	background: $text-secondary-color;
+body::-webkit-scrollbar-track {
+	background: $tertiary-color;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: $primary-color;
 }

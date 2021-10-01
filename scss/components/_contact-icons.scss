@@ -9,7 +9,7 @@
 
 .connect-icon:hover,
 .connect:focus > i {
-	@include primary-hover;
+	@include secondary-state;
 }
 
 .icon-linkedin:before {

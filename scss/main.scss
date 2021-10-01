@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
+@import 'abstracts/animations';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-@import 'abstracts/animations';
 
 // 2. Base stuff
 @import 'base/base';
 @import 'base/typography';
-// @import 'base/scrollbars';
+@import 'base/scrollbars';
 
 // 3. Layout-related sections
 @import 'layout/section-container';
@@ -34,3 +34,4 @@
 @import 'components/form';
 @import 'components/sharing-links';
 @import 'components/scroll-button';
+@import 'components/slidein';
